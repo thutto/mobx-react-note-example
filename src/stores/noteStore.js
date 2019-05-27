@@ -23,7 +23,6 @@ export class NoteStore {
 
   @action
   async addNote(noteText) {
-    console.log(`Adding: ${noteText}`);
     const noteObj = {
       id: "IDStubForBadAPI",
       note: noteText

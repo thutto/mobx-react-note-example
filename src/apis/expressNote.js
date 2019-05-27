@@ -8,7 +8,6 @@ class NoteApi {
   async getNotes() {
     try {
       const response = await axios.get(`${path}/notes`);
-      console.log(response);
       return response;
     } catch (error) {
       console.error(error);
@@ -19,7 +18,6 @@ class NoteApi {
   async createNote(note) {
     try {
       const response = await axios.post(`${path}/note`, note);
-      console.log(response);
       return response;
     } catch (error) {
       console.error(error);
