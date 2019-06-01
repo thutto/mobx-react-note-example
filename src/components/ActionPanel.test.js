@@ -4,13 +4,13 @@ import { observable, configure as mobxConf, action } from "mobx";
 import { expect } from "chai";
 import Adapter from "enzyme-adapter-react-16";
 import { stub, spy } from "sinon";
-import ActionPanel from "../../components/ActionPanel";
-import NoteStore from "../../stores/noteStore";
+import ActionPanel from "./ActionPanel";
+import NoteStore from "../stores/noteStore";
 
 configure({ adapter: new Adapter() });
 let createModalToggleSpy;
 
-describe("Note List", function() {
+describe("Action Panel", function() {
   it("Renders", function() {
     const wrapper = shallow(<ActionPanel />);
     expect(wrapper.find("Button")).to.have.lengthOf(1);

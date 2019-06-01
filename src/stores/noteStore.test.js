@@ -1,8 +1,8 @@
 import React from "react";
 import { expect } from "chai";
 import { stub, sandbox } from "sinon";
-import noteStore from "../../stores/noteStore";
-import { noteApi } from "../../apis";
+import noteStore from "./noteStore";
+import { noteApi } from "../apis";
 
 const createStub = stub(noteApi, "createNote");
 const addStub = stub(noteApi, "getNotes").returns({

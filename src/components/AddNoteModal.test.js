@@ -4,8 +4,8 @@ import { observable, configure as mobxConf, action } from "mobx";
 import { expect } from "chai";
 import Adapter from "enzyme-adapter-react-16";
 import { stub, spy } from "sinon";
-import AddNoteModal from "../../components/AddNoteModal";
-import NoteStore from "../../stores/noteStore";
+import AddNoteModal from "./AddNoteModal";
+import NoteStore from "../stores/noteStore";
 
 configure({ adapter: new Adapter() });
 let createModalToggleSpy;

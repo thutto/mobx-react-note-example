@@ -2,8 +2,8 @@ import React from "react";
 import { configure, mount } from "enzyme";
 import { expect } from "chai";
 import Adapter from "enzyme-adapter-react-16";
-import NoteItem from "../../components/NoteItem";
-import { Note } from "../../models";
+import NoteItem from "./NoteItem";
+import { Note } from "../models";
 
 configure({ adapter: new Adapter() });
 describe("Note List", function() {

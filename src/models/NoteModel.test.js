@@ -1,6 +1,6 @@
 import React from "react";
 import { expect } from "chai";
-import Note from "../../models/note";
+import Note from "./note";
 
 const result = {
   mongoId: "TestMongoId",

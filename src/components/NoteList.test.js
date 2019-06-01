@@ -4,10 +4,10 @@ import { shallow, configure, mount } from "enzyme";
 import { expect } from "chai";
 import { stub } from "sinon";
 import Adapter from "enzyme-adapter-react-16";
-import NoteStore from "../../stores/noteStore";
-import { noteApi } from "../../apis";
-import NoteList from "../../components/NoteList";
-import { Note } from "../../models";
+import NoteStore from "../stores/noteStore";
+import { noteApi } from "../apis";
+import NoteList from "./NoteList";
+import { Note } from "../models";
 
 configure({ adapter: new Adapter() });
 describe("Note List", function() {

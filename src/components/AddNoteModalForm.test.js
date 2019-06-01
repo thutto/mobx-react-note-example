@@ -4,9 +4,9 @@ import { shallow, configure, mount } from "enzyme";
 import { expect } from "chai";
 import { stub } from "sinon";
 import Adapter from "enzyme-adapter-react-16";
-import NoteStore from "../../stores/noteStore";
-import AddNoteModalForm from "../../components/AddNoteModalForm";
-import { Note } from "../../models";
+import NoteStore from "../stores/noteStore";
+import AddNoteModalForm from "./AddNoteModalForm";
+import { Note } from "../models";
 
 configure({ adapter: new Adapter() });
 describe("Note Modal Form", function() {
