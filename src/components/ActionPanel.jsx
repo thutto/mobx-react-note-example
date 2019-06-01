@@ -7,6 +7,7 @@ import AddNoteModal from "./AddNoteModal";
 @observer
 export default class ActionPanel extends Component {
   @observable createModalOpen = false;
+
   @action
   createModalToggle = () => {
     this.createModalOpen = !this.createModalOpen;

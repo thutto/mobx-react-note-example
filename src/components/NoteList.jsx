@@ -18,18 +18,6 @@ export default class NoteList extends Component {
     noteStore.getNotes();
   }
 
-  @action
-  handleInputChange = e => {
-    this.newTodoTitle = e.target.value;
-  };
-
-  @action
-  handleFormSubmit = e => {
-    this.props.store.addTodo(this.newTodoTitle);
-    this.newTodoTitle = "";
-    e.preventDefault();
-  };
-
   render() {
     const { noteStore } = this.props;
     return (
