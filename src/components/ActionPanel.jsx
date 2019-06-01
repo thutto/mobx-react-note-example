@@ -1,25 +1,12 @@
 import React, { Component } from "react";
 import { observable, action } from "mobx";
-import { observer, inject } from "mobx-react";
+import { observer } from "mobx-react";
 import { Button } from "reactstrap";
 import AddNoteModal from "./AddNoteModal";
 
 @observer
 export default class ActionPanel extends Component {
   @observable createModalOpen = false;
-
-  @action
-  handleInputChange = e => {
-    this.newTodoTitle = e.target.value;
-  };
-
-  @action
-  handleFormSubmit = e => {
-    this.props.store.addTodo(this.newTodoTitle);
-    this.newTodoTitle = "";
-    e.preventDefault();
-  };
-
   @action
   createModalToggle = () => {
     this.createModalOpen = !this.createModalOpen;

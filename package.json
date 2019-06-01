@@ -34,6 +34,7 @@
   "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "babel-polyfill": "^6.26.0",
@@ -45,6 +46,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
     "jsdom": "^15.1.0",
     "mocha": "^6.1.4",
     "react-addons-test-utils": "^15.6.2",

@@ -29,9 +29,7 @@ export default class AddNoteModalForm extends Component {
       //TODO Add error handling
       return;
     }
-    //TODO Send Post.
     await noteStore.addNote(this.noteText);
-    //TODO Close Modal.
     toggle();
   };
 
